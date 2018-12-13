@@ -9,7 +9,7 @@ $(function () {
             ,
             {
                 name: 'ตารางแสดงประวัติการ',
-                link: 'datatable.html',
+                link: 'datatable_tool.html',
                 sub: null
             }
             ,{

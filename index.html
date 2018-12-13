@@ -6,7 +6,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ฟอร์มบันทึกการเปลี่ยน Tool</title>
+  <title></title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <meta name="viewport" content="width=device-width">
   <!-- Bootstrap core CSS     -->
@@ -18,9 +18,9 @@
   <!--     Fonts and icons     -->
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/font-muli.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
   <link href="assets/css/themify-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css">
 </head>
 
@@ -47,7 +47,8 @@
           </button>
         </div>
         <div class="navbar-header">
-          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems"
+            aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">ฟอร์มบันทึกการเปลี่ยน Tool</a>
@@ -55,7 +56,8 @@
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 <i class="ti-bell nav-icon"></i>
                 <span class="notification">6</span>
                 <p class="hidden-lg-up"> Notifications <i class="fa fa-sort-desc submenu-toggle"></i>
@@ -101,67 +103,173 @@
                   <div class="col-md-12">
                     <div class="card">
                       <div class="card-header">
-                        <div class="row">
+                        <!-- <div class="row">
                           <div class="col-md-12">
                             <label class="p-2">
                               <b>ฟอร์มบันทึกการเปลี่ยน Tool</b>
                             </label>
                           </div>
-                        </div>
+                        </div> -->
+
                         <div class="row">
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Date</label>
+                            <input type="date" class="form-control">
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Time</label>
+                            <input type="time" class="form-control">
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Line No.</label>
+                            <select class="form-control">
+                              <option value="">== Line No. ==</option>
+                            </select>
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Machine No.</label>
+                            <select class="form-control">
+                              <option value="">== Machine No. ==</option>
+                            </select>
                           </div>
                         </div>
+
                         <div class="row">
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Product</label>
+                            <select class="form-control">
+                              <option value="">== Product ==</option>
+                            </select>
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Actual Tool Life</label>
+                            <input type="text" class="form-control">
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Standard Tool Life</label>
+                            <input type="text" class="form-control">
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Cause</label>
+                            <select class="form-control">
+                              <option value="">== Cause ==</option>
+                            </select>
                           </div>
                         </div>
+
                         <div class="row">
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Sub Cause</label>
+                            <select class="form-control">
+                              <option value="">== Sub Cause ==</option>
+                            </select>
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>Main Cause</label>
+                            <select class="form-control">
+                              <option value="">== Main Cause ==</option>
+                            </select>
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>ID No.</label>
+                            <input class="form-control">
                           </div>
                           <div class="col-md-3">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label>User Name</label>
+                            <select class="form-control">
+                              <option value="">== User Name ==</option>
+                            </select>
                           </div>
                         </div>
+
+                        <div class="row">
+                          <div class="col-md-3">
+                            <label>Short AGS.</label>
+                            <select class="form-control">
+                              <option value="">== Short AGS. ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>AGS. Code</label>
+                            <select class="form-control">
+                              <option value="">== AGS. Code ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Tool Model</label>
+                            <select class="form-control">
+                              <option value="">== Tool Model ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Unit Price</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-3">
+                            <label>Tool Type</label>
+                            <select class="form-control">
+                              <option value="">== Tool Type ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Group</label>
+                            <select class="form-control">
+                              <option value="">== Group ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Kind</label>
+                            <select class="form-control">
+                              <option value="">== Kind ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Qty</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-3">
+                            <label>Kanban Tag</label>
+                            <select class="form-control">
+                              <option value="">== Kanban Tag ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Remain Stock</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="col-md-3">
+                            <label>Record By</label>
+                            <select class="form-control">
+                              <option value="">== Record By ==</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Tool Cost</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                <label for="comment">Remark</label>
+                                <textarea class="form-control" rows="5"></textarea>
+                              </div> 
+                          </div>
+                        </div>
+
+                        <div class="row fa-pull-right">
+                          <div class="col-md-3">
+                            <a class="btn btn-default" style="width:100px;"> save </a>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -221,13 +329,7 @@
   <!-- Datatable Bootstrap4 -->
   <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
   <script src="loadmenu.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#tableone').DataTable();
-      $('#tabletwo').DataTable();
-    });
-  </script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo> 2018
+
 </body>
 
 </html>
