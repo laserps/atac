@@ -12,6 +12,16 @@ $(function () {
                 link: 'datatable.html',
                 sub: null
             }
+            ,{
+                name: 'Import File',
+                link: 'importfile.html',
+                sub: null
+            }
+            ,{
+                name: 'Import Manual',
+                link: 'importfilemanual.html',
+                sub: null
+            }
 //            ,
 //            {
 //                name: 'Back Office',
