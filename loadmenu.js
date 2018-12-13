@@ -9,29 +9,10 @@ $(function () {
             ,
             {
                 name: 'ตารางแสดงประวัติการ',
-                link: 'datatable.html',
+                link: 'datatable_tool.html',
                 sub: null
             }
-//            ,
-//            {
-//                name: 'Back Office',
-//                link: '#',
-//                sub: [
-//                    {
-//                        name: 'คำสั่งซื้อ',
-//                        link: 'order.html',
-//                        sub: null
-//                    },{
-//                        name: 'ระบบบันทึกการส่งสินค้า',
-//                        link: 'order_send.html',
-//                        sub: null
-//                    },{
-//                        name: 'ระบบจัดการสินค้า',
-//                        link: 'product.html',
-//                        sub: null
-//                    },
-//                ]
-//            }
+
         ]
     };
 
