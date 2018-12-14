@@ -20,7 +20,6 @@
 
   <!--  CSS for Demo Purpose, don't include it in your project     -->
   <link href="assets/css/demo.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 
   <!--     Fonts and icons     -->
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -128,6 +127,7 @@
                     <table id="example" class="display" style="width:100%;">
                         <thead>
                             <tr>
+                                <th class="text-center"></th>
                                 <th class="text-center">DateTime</th>
                                 <th class="text-center">Line No.</th>
                                 <th class="text-center">Product</th>
@@ -136,14 +136,32 @@
                         </thead>
                             <tbody id="loopbody">
                                 <tr v-for="loop in items">
-                                    <td class="text-center"><input type="text" class="form-control"></td>
-                                    <td class="text-center"><input type="text" class="form-control"></td>
-                                    <td class="text-center"><input type="text" class="form-control"></td>
-                                    <td class="text-center"><input type="text" class="form-control"></td>
+                                    <td></td>
+                                    <td class="text-center"><input type="text" value="2018-12-13 16:10:43"></td>
+                                    <td class="text-center">
+                                        <select class="">
+                                            <option value="MA0414">MA0414</option>
+                                            <option value="MA0415">MA0415</option>
+                                            <option value="MA0416">MA0416</option>
+                                        </select>
+                                    </td>
+                                    <td class="text-center">
+                                        <select class="">
+                                            <option value="TGC KD">TGC KD</option>
+                                            <option value="TGC KD">TGC KD</option>
+                                            <option value="TGC KD">TGC KD</option>
+                                        </select>
+                                    </td>
+                                    <td class="text-center"><input type="text" value="5"></td>
                                 </tr>
+                                <tr>
+                                    <td colspan="5" class="text-center"><button class="btn btn-primary"><i class="fa fa-plus"></i></button></td>
+                                </tr>
+                                
                             </tbody>
                         <tfoot>
                             <tr>
+                                <th class="text-center"></th>
                                 <th class="text-center">DateTime</th>
                                 <th class="text-center">Line No.</th>
                                 <th class="text-center">Product</th>
@@ -151,8 +169,7 @@
                             </tr>
                         </tfoot>
                       </table>
-                    </div>             
-
+                    </div>         
                                             </div>
                                         </div>
                                     </div>

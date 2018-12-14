@@ -62,7 +62,7 @@
                     <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Import File</a>
+                    <a class="navbar-brand" href="#">View 2</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarItems">
                     <ul class="nav navbar-nav ml-auto">
@@ -116,17 +116,31 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label class="p-2">
-                                                            <b>Import File</b>
+                                                            <b>View 2</b>
                                                         </label>
                                                     </div>
                                                 </div>
 
                                                 <div class="row">
                                                     <div class="col-md-3">
-                                                        <input type="file" name="file" class="form-control">
+                                                        <label>Date</label>
+                                                        <input type="date" class="">
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <button class="btn btn-primary">Read</button>
+                                                    <div class="col-md-3">
+                                                        <label>Product</label>
+                                                        <select class="">
+                                                            <option value="MA0414">MA0414</option>
+                                                            <option value="MA0415">MA0415</option>
+                                                            <option value="MA0416">MA0416</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Line No.</label>
+                                                        <select class="">
+                                                            <option value="TGC KD">TGC KD</option>
+                                                            <option value="TGC KD">TGC KD</option>
+                                                            <option value="TGC KD">TGC KD</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -136,9 +150,8 @@
                     <table id="example" class="display" style="width:100%;">
                         <thead>
                             <tr>
-                                <td class="text-center"><input style="height:20px;" type="checkbox" class="form-control"></td>
-                                <th class="text-center">Timestamp</th>
-                                <!-- <th class="text-center">Jan.</th>
+                                <th class="text-center">Line No.</th>
+                                <th class="text-center">Jan.</th>
                                 <th class="text-center">Feb.</th>
                                 <th class="text-center">Mar.</th>
                                 <th class="text-center">Apr.</th>
@@ -149,38 +162,32 @@
                                 <th class="text-center">Sep.</th>
                                 <th class="text-center">Oct.</th>
                                 <th class="text-center">Nov.</th>
-                                <th class="text-center">Dec.</th> -->
-                                <th class="text-center">Line No.</th>
-                                <th class="text-center">Product</th>
-                                <th class="text-center">Volume</th>
+                                <th class="text-center">Dec.</th>
+                                
                             </tr>
                         </thead>
                             <tbody id="loopbody">
                                 <tr v-for="loop in items">
-                                    <td class="text-center"><input style="height:20px;" type="checkbox" class="form-control"></td>
-                                    <td class="text-center">2018-10</td>
-                                    <!-- <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td>
-                                    <td class="text-center"><input type="text"></td> -->
                                     <td class="text-center">MA0414</td>
-                                    <td class="text-center">KLA-2030</td>
-                                    <td class="text-center">20</td>
+                                    <td class="text-center"><input type="text" value="23"></td>
+                                    <td class="text-center"><input type="text" value="56"></td>
+                                    <td class="text-center"><input type="text" value="42"></td>
+                                    <td class="text-center"><input type="text" value="8"></td>
+                                    <td class="text-center"><input type="text" value="1"></td>
+                                    <td class="text-center"><input type="text" value="9"></td>
+                                    <td class="text-center"><input type="text" value="84"></td>
+                                    <td class="text-center"><input type="text" value="27"></td>
+                                    <td class="text-center"><input type="text" value="57"></td>
+                                    <td class="text-center"><input type="text" value="26"></td>
+                                    <td class="text-center"><input type="text" value="57"></td>
+                                    <td class="text-center"><input type="text" value="48"></td>
+
                                 </tr>
                             </tbody>
                         <tfoot>
                             <tr>
-                                <th class="text-center"></th>
-                                <th class="text-center">Timestamp</th>
-                                <!-- <th class="text-center">Jan.</th>
+                                <th class="text-center">Line No.</th>
+                                <th class="text-center">Jan.</th>
                                 <th class="text-center">Feb.</th>
                                 <th class="text-center">Mar.</th>
                                 <th class="text-center">Apr.</th>
@@ -191,20 +198,11 @@
                                 <th class="text-center">Sep.</th>
                                 <th class="text-center">Oct.</th>
                                 <th class="text-center">Nov.</th>
-                                <th class="text-center">Dec.</th> -->
-                                <th class="text-center">Line No.</th>
-                                <th class="text-center">Product</th>
-                                <th class="text-center">Volume</th>
+                                <th class="text-center">Dec.</th>
                             </tr>
                         </tfoot>
                       </table>
                     </div>    
-                    <div class="clearfix"></div><br/>
-                    
-                    <div class="col-md-12">
-                        <button class="pull-right btn btn-primary">confirm</button>
-                    </div>
-
                                             </div>
                                         </div>
                                     </div>

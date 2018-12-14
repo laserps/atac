@@ -22,6 +22,21 @@ $(function () {
                 link: 'importfilemanual.html',
                 sub: null
             }
+            ,{
+                name: 'View',
+                link: 'view.html',
+                sub: null
+            }
+            ,{
+                name: 'View 2',
+                link: 'view2.html',
+                sub: null
+            }
+            ,{
+                name: 'Report',
+                link: 'report.html',
+                sub: null
+            }
 //            ,
 //            {
 //                name: 'Back Office',
