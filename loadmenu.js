@@ -2,34 +2,56 @@ $(function () {
     var data = {
         menu: [
             {
-                name: 'form บันทึกการเปลี่ยน tool',
+                name: 'ตารางแสดงประวัติการ',
+                link: 'datatable_tool.html',
+                sub: null
+            }
+            ,
+            {
+                name: 'บันทึกการเปลี่ยน tool',
                 link: 'index.html',
                 sub: null
             }
             ,
             {
-                name: 'ตารางแสดงประวัติการ',
-                link: 'datatable_tool.html',
+                name: 'การเปลี่ยน tool(Excel)',
+                link: 'index_import_file.html',
                 sub: null
             }
-            ,{
-                name: 'Import File',
-                link: 'importfile.html',
-                sub: null
-            }
-            ,{
-                name: 'Import Manual',
+            ,
+            {
+                name: 'Production Volume',
                 link: 'importfilemanual.html',
                 sub: null
             }
-            ,{
-                name: 'View',
-                link: 'view.html',
+            ,
+            {
+                name: 'Production Volume(Excel)',
+                link: 'importfile.html',
                 sub: null
             }
-            ,{
-                name: 'View 2',
-                link: 'view2.html',
+            ,
+            {
+                name: 'Target Budget(Product)',
+                link: 'targetbudget_product.html',
+                sub: null
+            }
+            ,
+            {
+                name: 'Target Budget(Line No.)',
+                link: 'targetbudget_lineno.html',
+                sub: null
+            }
+            ,
+            {
+                name: 'Unit Cost(Product)',
+                link: 'unitcost_product.html',
+                sub: null
+            }
+            ,
+            {
+                name: 'Unit Cost(Line No.)',
+                link: 'unitcost_lineno.html',
                 sub: null
             }
             ,{

@@ -63,7 +63,7 @@
                         data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Product Volume </a>
+                    <a class="navbar-brand" href="#">Unit Cost</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarItems">
                     <ul class="nav navbar-nav ml-auto">
@@ -106,7 +106,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="">
+            <div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
@@ -117,77 +117,101 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        Product Volume
+                                                        Unit Cost
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card-body p-2">
                                                 <div class="row">
-                                                    <div class="col-md-2 text-right">Month : </div>
-                                                    <div class="col-md-4">
-                                                        <!-- <input type="date" name="" id="input" class="form-control"
-                                                            value="" required="required" pattern="" title=""> -->
+                                                    <div class="col-md-3">
+                                                        <label>Date</label>
                                                         <select>
-                                                            <option value="MA0414">== Month ==</option>
+                                                            <option value="#">== Year ==</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-2 text-right">Year : </div>
-                                                    <div class="col-md-4">
-                                                        <!-- <input type="date" name="" id="input" class="form-control"
-                                                            value="" required="required" pattern="" title=""> -->
+                                                    <div class="col-md-2">
+                                                        <label>Product</label>
                                                         <select>
-                                                            <option value="MA0414">== Year ==</option>
+                                                            <option value="#">FC</option>
+                                                            <option value="#">WP</option>
+                                                            <option value="#">OP</option>
                                                         </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label>Line No.</label>
+                                                        <select>
+                                                            <option value="#">MA0300</option>
+                                                            <option value="#">MA0301</option>
+                                                            <option value="#">MA0302</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label>By </label>&nbsp;&nbsp;&nbsp;
+                                                        <label><input type="radio" name="optradio"> Product</label>&nbsp;&nbsp;
+                                                        <label><input type="radio" name="optradio" checked> Line No.</label>
                                                     </div>
                                                 </div>
+                                                <br>
                                                 <div style=" overflow: auto;">
                                                     <table id="example" class="display" style="width:100%;">
                                                         <thead>
                                                             <tr>
                                                                 <th class="text-center">No.</th>
-                                                                <th class="text-center">DateTime</th>
                                                                 <th class="text-center">Line No.</th>
-                                                                <th class="text-center">Product</th>
-                                                                <th class="text-center">Volume</th>
+                                                                <th class="text-center">Jan.</th>
+                                                                <th class="text-center">Feb.</th>
+                                                                <th class="text-center">Mar.</th>
+                                                                <th class="text-center">Apr.</th>
+                                                                <th class="text-center">May.</th>
+                                                                <th class="text-center">Jun.</th>
+                                                                <th class="text-center">Jul.</th>
+                                                                <th class="text-center">Aug.</th>
+                                                                <th class="text-center">Sep.</th>
+                                                                <th class="text-center">Oct.</th>
+                                                                <th class="text-center">Nov.</th>
+                                                                <th class="text-center">Dec.</th>
+
                                                             </tr>
                                                         </thead>
                                                         <tbody id="loopbody">
                                                             <tr v-for="loop in items">
                                                                 <td class="text-center">{{loop.num}}</td>
-                                                                <td class="text-center"><input type="text" value="2018-12-13 16:10:43"></td>
-                                                                <td class="text-center">
-                                                                    <select class="">
-                                                                        <option value="MA0414">MA0414</option>
-                                                                        <option value="MA0415">MA0415</option>
-                                                                        <option value="MA0416">MA0416</option>
-                                                                    </select>
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    <select>
-                                                                        <option value="FC">FC</option>
-                                                                    </select>
-                                                                </td>
-                                                                <td class="text-center"><input type="text" value="5"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td colspan="5" class="text-center"><a class="btn btn-sm btn-default">+
-                                                                        add line</a></td>
-                                                            </tr>
+                                                                <td class="text-center">{{loop.line}}</td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
+                                                                <td class="text-center"><input type="text" value="20.10"></td>
 
+                                                            </tr>
                                                         </tbody>
                                                         <tfoot>
                                                             <tr>
                                                                 <th class="text-center">No.</th>
-                                                                <th class="text-center">DateTime</th>
                                                                 <th class="text-center">Line No.</th>
-                                                                <th class="text-center">Product</th>
-                                                                <th class="text-center">Volume</th>
+                                                                <th class="text-center">Jan.</th>
+                                                                <th class="text-center">Feb.</th>
+                                                                <th class="text-center">Mar.</th>
+                                                                <th class="text-center">Apr.</th>
+                                                                <th class="text-center">May.</th>
+                                                                <th class="text-center">Jun.</th>
+                                                                <th class="text-center">Jul.</th>
+                                                                <th class="text-center">Aug.</th>
+                                                                <th class="text-center">Sep.</th>
+                                                                <th class="text-center">Oct.</th>
+                                                                <th class="text-center">Nov.</th>
+                                                                <th class="text-center">Dec.</th>
                                                             </tr>
                                                         </tfoot>
                                                     </table>
                                                 </div>
-                                                <br>
-                                                <div class="p-2 fa-pull-right"><a class="btn btn-default" href="#">save</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -272,17 +296,45 @@
             el: '#loopbody',
             data: {
                 items: [{
-                    num: 1
+                    num: 1,
+                    product: 'FC',
+                    line:'MA0301'
                 }, {
-                    num: 2
+                    num: 2,
+                    product: 'TGC KD',
+                    line:'MA0302'
                 }, {
-                    num: 3
+                    num: 3,
+                    product: 'TGC TR',
+                    line:'MA0303'
                 }, {
-                    num: 4
+                    num: 4,
+                    product: 'WP',
+                    line:'MA0304'
                 }, {
-                    num: 5
+                    num: 5,
+                    product: 'OP',
+                    line:'MA0305'
                 }, {
-                    num: 6
+                    num: 6,
+                    product: 'TCC 16MY',
+                    line:'MA0306'
+                }, {
+                    num: 7,
+                    product: 'TCC ZR',
+                    line:'MA0307'
+                }, {
+                    num: 8,
+                    product: 'TCC EFC',
+                    line:'MA0308'
+                }, {
+                    num: 9,
+                    product: 'CHC ZR',
+                    line:'MA0309'
+                }, {
+                    num: 10,
+                    product: 'OP TRANS',
+                    line:'MA0310'
                 }]
             }
         });
