@@ -145,7 +145,8 @@
                                                         <thead>
                                                             <tr>
                                                                 <th class="text-center">No.</th>
-                                                                <th class="text-center">DateTime</th>
+                                                                <th class="text-center">Year</th>
+                                                                <th class="text-center">Month</th>
                                                                 <th class="text-center">Line No.</th>
                                                                 <th class="text-center">Product</th>
                                                                 <th class="text-center">Volume</th>
@@ -154,23 +155,31 @@
                                                         <tbody id="loopbody">
                                                             <tr v-for="loop in items">
                                                                 <td class="text-center">{{loop.num}}</td>
-                                                                <td class="text-center"><input type="text" value="2018-12-13 16:10:43"></td>
+                                                                <td class="text-center">2018</td>
                                                                 <td class="text-center">
-                                                                    <select class="">
+                                                                    January
+                                                                    <!-- <select>
+                                                                        <option selected v-if="month.num == loop.num" v-for="month in months" :value="month.num">{{month.text}}</option>
+                                                                        <option v-else v-for="month in months" :value="month.num">{{month.text}}</option>
+                                                                    </select> -->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <select>
                                                                         <option value="MA0414">MA0414</option>
                                                                         <option value="MA0415">MA0415</option>
                                                                         <option value="MA0416">MA0416</option>
                                                                     </select>
                                                                 </td>
                                                                 <td class="text-center">
-                                                                    <select>
+                                                                    FC
+                                                                    <!-- <select disabled>
                                                                         <option value="FC">FC</option>
-                                                                    </select>
+                                                                    </select> -->
                                                                 </td>
-                                                                <td class="text-center"><input type="text" value="5"></td>
+                                                                <td class="text-center"><input type="text" value="9999"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="5" class="text-center"><a class="btn btn-sm btn-default">+
+                                                                <td colspan="6" class="text-center"><a class="btn btn-sm btn-default">+
                                                                         add line</a></td>
                                                             </tr>
 
@@ -178,7 +187,8 @@
                                                         <tfoot>
                                                             <tr>
                                                                 <th class="text-center">No.</th>
-                                                                <th class="text-center">DateTime</th>
+                                                                <th class="text-center">Year</th>
+                                                                <th class="text-center">Month</th>
                                                                 <th class="text-center">Line No.</th>
                                                                 <th class="text-center">Product</th>
                                                                 <th class="text-center">Volume</th>
@@ -284,6 +294,21 @@
                 }, {
                     num: 6
                 }]
+                ,
+                months:[
+                    {num:1 , text:'January'}
+                    ,{num:2 , text:'February'}
+                    ,{num:3 , text:'March'}
+                    ,{num:4 , text:'April'}
+                    ,{num:5 , text:'May'}
+                    ,{num:6 , text: 'June'}
+                    ,{num:7 , text:'July'}
+                    ,{num:8 , text:'August'}
+                    ,{num:9 , text:'September'}
+                    ,{num:10 , text:'October'}
+                    ,{num:11 , text:'November'}
+                    ,{num:12 , text:'December'}
+                ]
             }
         });
     </script>
